@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MGarciaTurboPacModelStoreContainer" CdmEntityContainer="MGarciaTurboPacEntities">
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="MGarciaTurboPacModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="EmpleadoAdd" FunctionName="MGarciaTurboPacModel.Store.EmpleadoAdd" />
+    <FunctionImportMapping FunctionImportName="EmpleadoDelete" FunctionName="MGarciaTurboPacModel.Store.EmpleadoDelete" />
+    <FunctionImportMapping FunctionImportName="EmpleadoGetById" FunctionName="MGarciaTurboPacModel.Store.EmpleadoGetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MGarciaTurboPacModel.EmpleadoGetById_Result">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EmpleadoUpdate" FunctionName="MGarciaTurboPacModel.Store.EmpleadoUpdate" />
+    <FunctionImportMapping FunctionImportName="EmpleadoGetAll" FunctionName="MGarciaTurboPacModel.Store.EmpleadoGetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MGarciaTurboPacModel.EmpleadoGetAll_Result">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
